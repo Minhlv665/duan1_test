@@ -54,6 +54,8 @@ class accModel{
         $data = $this->conn->query($sql)->fetch();
         return $data;
     }
+
+
     
 
 }

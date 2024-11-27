@@ -9,7 +9,8 @@ class accController{
         $accProduct=$this->accModel->getAllacc();
         require_once 'views/listacc.php';
     }
-
+    
+    
     public function deleteUser($id)
     {
         $oneAcc = $this->accModel->getacc($id);
