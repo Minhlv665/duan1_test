@@ -1,0 +1,652 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* Product Page */
+.product-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Main */
+.product-main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.product-image {
+    flex: 1; /* Cho phép ảnh chiếm toàn bộ chiều rộng của khối chứa */
+}
+
+.product-image img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của khối chứa */
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của khối chứa */
+    height: auto; /* Giữ tỷ lệ khung hình của ảnh */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-details h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.product-details .price {
+    font-size: 24px;
+    color: rgb(199, 66, 0);
+    font-weight: bold;
+}
+
+.product-details .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 16px;
+}
+
+.product-details .discount {
+    color: red;
+    font-size: 16px;
+}
+
+.product-details .quantity,
+.product-details .views {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-details .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.product-details .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product-details .buttons .buy-now {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+.product-details .buttons .buy-now:hover {
+    background-color: #e43e00;
+}
+
+.product-details .buttons .add-to-cart {
+    background-color: #f0c14b;
+    color: #111;
+}
+
+.product-details .buttons .add-to-cart:hover {
+    background-color: #e5b42a;
+}
+
+/* Product Comments */
+.product-comments {
+    margin-top: 20px;
+}
+
+.product-comments h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments .text_detail {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.comments form {
+    margin-bottom: 20px;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.comments .submit-comment {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comment-list {
+    margin-top: 20px;
+}
+
+.comment-list .comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment-list .comment p {
+    margin: 0;
+}
+
+.comment-list .comment span {
+    color: grey;
+    font-size: 0.8em;
+}
+
+/* Specifications */
+.specifications {
+    margin-top: 20px;
+}
+
+.specifications h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.specifications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.specifications li {
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-main {
+        flex-direction: column;
+    }
+}
+
+/*detail  */
+.base{
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.namebase{
+    width: 500px;
+    margin-left: 90px;
+    text-align: center;
+
+}
+
+.cycle{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #2dc688;
+    border-radius: 50%;
+    margin: 20px;
+    display: grid;
+    place-content: center;
+    box-shadow: inset 0 0 5px #2dc688;
+}
+.cycle>i{
+    font-size: 25px;
+    text-shadow: 0 0 5px aquamarine;
+}
+.cycle>i:hover{
+    font-size: 30;
+}
+.fa-facebook-f{
+    color: #1367e6;
+}
+.fa-square-instagram{
+    color: rgb(255, 111, 0);
+}
+.fa-twitter{
+    color: #1367e6;
+}
+.box-item1{
+    background-color: white;
+}
+
+.box-img{
+    height: 300px;
+    width: 500px;
+    box-shadow: 0 0 5px #8a8a8a;
+    border-radius: 7px;
+    text-align: center;
+}
+.box-img>img{
+    height: 280px;
+    margin: 10px 0px;
+}
+.inside{
+    width: 500px;
+    margin-top: 30px;
+    border: 1px solid #8a8a8a;
+    padding-left: 20px;
+    border-radius: 7px;
+}
+.inside>h4{
+   margin: 10px 0px;
+   color: #0b7e50;
+}
+.inside>h5{
+    margin: 10px 0px;
+ }
+.inside>h5:hover{
+    color: #0b7e50;   
+}
+
+
+.box-item2{
+   width: 500px;
+   margin-left: 30px
+ }
+.item1{
+    background-color: #0b7e50;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+.item1>h4{
+    color: white;
+    margin: 0px;
+}
+.item2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.item2>h2{
+    color: red;
+    margin-left: 20px;
+}
+.item3{
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.text-item{
+    margin-left: 30px
+}
+.item3>h4{
+    margin-left: 30px;
+}
+.item4{
+    width: 470px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 0px 15px;
+    border-radius: 7px;
+}
+.item5{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.buy{
+    color: white;
+    background: linear-gradient(to bottom, hsl(154, 100%, 27%), rgb(103, 234, 186));
+    height: 80px;
+    width: 70%;
+    border-radius: 7px;
+    text-align: center;
+}
+.buy:hover{
+    background: linear-gradient(to bottom, #008a4e, #40dda3);
+}
+.buy>h4{
+   margin: 20px 0px 0px 0px;
+}
+.buy>h5{
+    margin: 0px;
+}
+.add{
+    color: white;
+    height: 80px;
+    width: 26%;
+    border-radius: 7px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fc8b00, #eccb8e);
+}
+.add:hover{
+    background: linear-gradient(to bottom, #f3cc85, #fc6100);
+}
+.add>i{
+    margin-top:20px;
+}
+.add>h4{
+    margin: 0px;
+}
+
+.box-item3{
+    width: 350px;
+    border: 1px solid #ddd;
+    margin-left: 40px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 5px #a2a2a2;
+}
+.setting{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #ebebeb;
+    padding: 8px 0px ;
+    border-radius: 7px 7px 0px 0px;
+}
+.setting> i{
+    font-size: 17px;
+    margin: 0px 10px;
+}
+
+.box-item3> table{
+    width: 100%;
+    margin-top: 30px;
+
+    border-spacing: 0;
+}
+
+tr{
+    height: 50px;
+    /* border: 1px solid black; */
+}
+td:nth-child(1){
+    width: 50%;
+}
+td{
+    padding: 0px 10px;
+}
+
+tr:nth-child(2n+1){
+    background-color: #ebebeb;
+}
+
+
+
+/* comment */
+
+
+
+.base1{
+    width: 100%;
+    /* margin-left: 93px; */
+    box-shadow: 0 0 7px #979797;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.text-comment{
+    margin-left: 60px;
+}
+.text-comment > h3{
+    margin: 10px;
+    padding:20px 0px;
+}
+.form-comment{
+    width: 90%;
+    margin: auto;
+    
+}
+.form-comment >form{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    
+}
+.form-comment>form>input{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 0px 7px;
+    background-color: #e3e3e3;
+    border: 1px solid #c5c5c5;
+    outline: none;
+}
+.form-comment>form>.comment{
+    height: 40px;
+    border-radius: 5px;
+    width: 700px;
+    background-color: #e3e3e3;
+    border: 1px solid #c5c5c5;
+    font-size: 17px;
+
+}
+.form-comment>form>button{
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient( #06b189, rgb(5, 199, 199));
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.show-comment{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 1px solid #b1b1b1;
+    margin-top: 30px;
+    border-radius: 5px;
+
+}
+
+.taskform{
+    width: 70%;
+    margin: 20px;
+    min-height: 200px;
+}
+
+.avt{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5c5c5;
+}
+.avt>i{
+    font-size: 35px;
+}
+.fadsub{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.fadsub>h4{
+    color: #969494;
+}
+
+.onsub{
+    display: flex;
+    align-items: center;
+}
+.onsub>h4{
+    margin-left: 10px;
+}
+.all{
+    margin-bottom: 20px;
+}
+.all>h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px 0px 0px 60px;
+}
+
+
+/* end comment */
+
+
+/* Featured phone */
+
+
+.featured__phone__product__list{
+    margin-top: 30px;
+    display: grid;
+    min-height: 500px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.featured__phone__product__item{
+    width: 264px;
+    height: 350px;
+    transition: all ease 0.5s;
+    margin: 0 0 10px 0;
+    position: relative;
+    background-color: white;
+}
+
+.featured__phone__product__item:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.flash__sale__product__promotion__info p{
+    font-size: 0.8rem;
+    color: #444;
+}
+.featured__phone__product__item{
+    width: 264px;
+    height: 393px;
+    padding: 10px;
+    box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px, 
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    border-radius: 8px;
+    background-color: white;
+
+}
+.featured__phone__product__img__wrapper{
+    margin: 20px 0 15px 0;
+    width: 242px;
+    height: 200px;
+    text-align: center;
+}
+.featured__phone__product__img__wrapper img{
+    height: 100%;
+    object-fit: cover;
+}
+.featured__phone__product__desc__title{
+    margin-bottom: 10px;
+}
+.featured__phone__product__desc__title a{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-weight: 700;
+    color: #444;
+   
+}
+.featured__phone__product__desc__price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.featured__phone__product__desc__price__unit__old,
+.featured__phone__product__desc__price__unit__new{
+    position: relative;
+}
+.featured__phone__product__price__unit__new::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #D70018;
+    position: absolute;
+    top: 85%;
+    left: 0%;
+}
+.featured__phone__product__desc__price__unit__old::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    position: absolute;
+    top: 85%;
+    left: 0%;
+}
+.featured__phone__product__desc__price__old{
+    margin-right: 10px;
+    position: relative;
+}
+.featured__phone__product__desc__price__old p{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #444;
+}
+.featured__phone__product__desc__price__old::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.featured__phone__product__desc__price__new{
+    margin-right: 10px;
+    position: relative;
+}
+.featured__phone__product__desc__price__new p{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #D70018;
+}
+.featured__phone__product__promotion__info{
+    border: 1px solid #E5E7EB;
+    background-color: #F3F4F6;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.featured__phone__product__promotion__info p{
+    font-size: 0.8rem;
+    color: #444;
+}
+.featured__phone__product__desc__rare{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.featured__phone__product__desc__rare__star i{
+    font-size: 0.6rem;
+    color: #dcc001;
+}
+.featured__phone__product__desc__rare__vote p{
+    font-size: 0.7rem;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+/* End featured phone */

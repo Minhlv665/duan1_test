@@ -1,0 +1,23 @@
+table{
+    box-shadow: 0 0 5px #757575;
+}
+thead{
+    background-color: #353a40;
+    color: white;
+}
+tbody{
+    background-color: white;
+}
+td{
+    width: calc(100%/5);
+}
+.btn1{
+    width: 80px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    margin: 0px 10px;
+}
+.btn1:hover{
+    transform: scale(1.1);
+}
